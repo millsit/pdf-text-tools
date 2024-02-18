@@ -1,1 +1,2 @@
-export const myPackage = (taco = ''): string => `${taco} from my package`;
+import * as tools from './tools';
+export default tools;

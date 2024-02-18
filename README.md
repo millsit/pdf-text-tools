@@ -8,43 +8,38 @@
 [![Commitizen Friendly][commitizen-img]][commitizen-url]
 [![Semantic Release][semantic-release-img]][semantic-release-url]
 
-> My awesome module
+A bunch of tools to help with processing text from a pdf, for use with LLMs. 
+For example, finding headers, splitting text at headers, etc. Particularly useful for processing pages of text from a pdf, where the text is not structured in a way that is easy to process. and
 
 ## Install
 
 ```bash
-npm install my-package-name
+npm install pdf-text-tools
 ```
 
 ## Usage
 
 ```ts
-import { myPackage } from 'my-package-name';
+/**
+ * Find header titles in a pdf using regex ish 
+ */
+import { findHeaderTitles } from 'pdf-text-tools';
 
-myPackage('hello');
-//=> 'hello from my package'
+findHeaderTitles('..some text string from pdf..');
+//=> ['header1', 'header2'] 
+
+/**
+ * Split text at header titles
+ *  - Usefull to grab the last bit of a page
+ */ 
+import { splitAtHeader } from 'pdf-text-tools';
+
+splitAtHeader('..some text string from pdf..', "last");
+//=> ['text before the header', 'text after the heading, including the header'] 
+
 ```
 
-## API
-
-### myPackage(input, options?)
-
-#### input
-
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`
-Default: `rainbows`
-
-Lorem ipsum.
+## *More tools coming soon!*
 
 [build-img]:https://github.com/ryansonshine/typescript-npm-package-template/actions/workflows/release.yml/badge.svg
 [build-url]:https://github.com/ryansonshine/typescript-npm-package-template/actions/workflows/release.yml
