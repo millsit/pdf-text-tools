@@ -1,12 +1,12 @@
 # pdf-text-tools
-
+<!-- 
 [![npm package][npm-img]][npm-url]
 [![Build Status][build-img]][build-url]
 [![Downloads][downloads-img]][downloads-url]
 [![Issues][issues-img]][issues-url]
 [![Code Coverage][codecov-img]][codecov-url]
 [![Commitizen Friendly][commitizen-img]][commitizen-url]
-[![Semantic Release][semantic-release-img]][semantic-release-url]
+[![Semantic Release][semantic-release-img]][semantic-release-url] -->
 
 A bunch of tools to help with processing text from a pdf, for use with LLMs. 
 For example, finding headers, splitting text at headers, etc. Particularly useful for processing pages of text from a pdf, where the text is not structured in a way that is easy to process. and
